@@ -1,0 +1,186 @@
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: Montserrat, sans-serif;
+    font-wight: 500;
+    font-size: 12px;
+  }
+  
+  .root {
+    margin-left: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .header {
+    display: flex;
+    width: 910px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px rgba(0,0,0,.1) solid;
+  }
+  
+  .title {
+    padding-right: 40px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 3px;
+    width: 658px;
+  }
+  
+  .preview {
+    position: relative;
+  }
+  
+  .preview-rect {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .actions {
+    display: flex;
+    margin-bottom: 10px;
+    width: 900px;
+    justify-content: space-between;
+  }
+  
+  .axis path {
+    display: none;
+  }
+  
+  .x-axis line {
+    stroke-opacity: 0.1;
+  }
+  
+  .y-axis line {
+    stroke-opacity: 0.2;
+  }
+  
+  .axis text {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  
+  .y-axis line {
+    stroke-dasharray: 1, 2;
+    stroke-width: 1;
+  }
+  
+  .y-axis .tick text {
+    text-anchor: end;
+  }
+  
+  text, button {
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .preview-axis.x-axis .tick:nth-child(2) text {
+    text-anchor: start;
+  }
+  
+  .preview-axis.x-axis .tick:nth-child(3) text {
+    text-anchor: end;
+  }
+  
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+  
+  .region-hover {
+    stroke: #000;
+    stroke-width: 4px;
+  }
+  
+  .voronoi path {
+    fill: none;
+    pointer-events: all;
+  }
+  
+  .voronoi-show path {
+    stroke: red;
+    stroke-opacity: 0.2;
+  }
+  
+  .dot {
+    stroke-width: 1px;
+    stroke: white;
+  }
+  
+  .legend {
+    font-size: 0;
+    white-space: nowrap;
+    margin-left: 50px;
+    margin-top: 25px;
+  }
+  
+  .legend-column {
+    position: relative;
+    width: 322px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .legend-item {
+    display: flex;
+    margin-bottom: 12px;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    position: relative;
+  
+    &.disabled {
+      opacity: .3;
+    }
+  }
+  
+  .legend-item-text {
+    line-height: 20px;
+  }
+  
+  .legend-value {
+    position: absolute;
+    left: -65px;
+    font-weight: normal;
+    top: 3px;
+  }
+  
+  .legend-date {
+    position: absolute;
+    top: -22px;
+    left: -65px;
+    font-size: 10px;
+    letter-spacing: 0.3px;
+  }
+  
+  .legend-item-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 14px;
+  }
+  
+  .extra-options-container {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    width: 900px;
+    margin-top: 10px;
+  }
+  
+  .hide-all-option, .show-all-option {
+    border-bottom: 1px dashed black;
+    cursor: pointer;
+    float: right;
+    margin-left: 30px;
+  }
+  
+  .hide-all-option:hover, .show-all-option:hover {
+    text-decoration: none;
+    opacity: .4;
+  }
